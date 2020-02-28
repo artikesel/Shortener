@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/public/css/app.css">
+
 </head>
 <body>
     <header>
@@ -19,6 +20,6 @@
     @yield('content')
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="/public/js/app.js"></script>
 </body>
 </html>

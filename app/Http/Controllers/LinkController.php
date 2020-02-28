@@ -6,7 +6,7 @@ use App\Link;
 function getId($res){
     return ($res->id);
 }
-$GLOBALS['domain'] = 'your-shortener-domain.ru';
+$GLOBALS['domain'] = 'shortener.peresvet47.ru';
 function makeUrl($id){
     return 'http://'.$GLOBALS['domain'] .'/api/linking/'.$id;
 }
