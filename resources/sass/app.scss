@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+// Variables
+@import 'variables';
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif ;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: #f5f4f5;
+
+}
+header{
+    width: 80%;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222621;
+    align-items: center;
+    a{
+        color: lightgrey;
+        font-size: 25px;
+        transition: 0.2s;
+    }
+    a:hover{
+        transition: 0.2s;
+        color: white;
+    }
+    h1{
+        cursor: pointer;
+        font-size: 50px;
+        color: #f8fafc;
+    }
+}
+#wrapper{
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form{
+        position: relative;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white ;
+        box-shadow: 1px 1px 7px grey ;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        padding-bottom: 100px;
+        position: relative;
+        h2{
+            font-size: 50px;
+            margin-bottom: 25px;
+            color: #222621;
+        }
+        input[type='text']{
+            width: 500px;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid black;
+            border-radius: 5px 0px 0px 5px;
+            border-right: none;
+        }
+        input[type='submit']{
+            text-transform: uppercase;
+            border-radius:0px 5px 5px 0px ;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 10px;
+            width: 100px;
+            border: 1px solid black;
+            border-left: none;
+            background-color: #3490dc;
+            transition: 0.2s;
+            color: white;
+            position: relative;
+
+        }
+        input[type='submit']:hover{
+            transition: 0.2s;
+            background-color: #6cb2eb;
+        }
+        .resultShorten{
+            position: absolute;
+            text-align: center;
+            bottom: 40px;
+            width: 100%;
+            transition: 0.1s;
+            a{
+                font-size: 20px;
+                color: #3490dc;
+            }
+        }
+        .resultShorten:hover{
+            transition: 0.1s;
+            transform: translateY(-1px);
+        }
+    }
+}
+.error{
+    font-size: 15px;
+    color: crimson;
+}
+#resentShorten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    a{
+        color: #272a2c;
+        font-size: 20px;
+        margin-bottom: 10px;
+        transition: 0.2s;
+    }
+    a:hover{
+        color: #545653;
+        transition: 0.2s;
+    }
+}
+
